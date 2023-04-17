@@ -6,8 +6,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
 
-//при конвертации Jackson парсит JSON в объекты.
-//для этого должны быть классы, идентичные классам DTO и response из приложения сервера
 public class Client {
     public static void main(String[] args) {
         final String sensorName = "Sensor 8";
@@ -25,7 +23,7 @@ public class Client {
                         random.nextBoolean(), sensorName);
             }
         }
-        //deleteSensor("Sensor123");
+        //deleteSensor("Sensor 8");
     }
 
     private static HttpStatus registerSensor(String sensorName) {
